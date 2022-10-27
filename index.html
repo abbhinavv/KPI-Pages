@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Crickbuzz</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+    /* Styles here */
+    body {
+      height: 100%;
+      background-color: #e3e6e3;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    hr {
+      border: 1px solid lightgray;
+    }
+
+    .container {
+      width: 980px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      height: 32px;
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .nav {
+      height: 48px;
+      background-color: #009270;
+      display: flex;
+      align-items: center;
+    }
+
+    .gray-nav {
+      height: 48px;
+      background-color: rgb(65, 65, 65);
+      display: flex;
+      align-items: center;
+    }
+
+    .navitem {
+      color: white;
+      display: flex;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 14px;
+      align-items: center;
+    }
+    .gray-navitem{
+      color: white;
+      display: flex;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 12px;
+      align-items: center;
+    }
+
+    .S-Container-p {
+      height: 25px;
+      background-color: white;
+      margin-top: 10px;
+      padding: 15px;
+      padding-left: 20px;
+    }
+
+    .S-navitem {
+      display: inline;
+      padding-right: 5px;
+      padding-left: 5px;
+      font-size: 14px;
+      align-items: center;
+    }
+
+    .featured-matches {
+      height: 100px;
+      background-color: white;
+      margin-top: 10px;
+      padding: 15px;
+      padding-left: 20px;
+    }
+
+    .featured-match-heading {
+      color: #009270;
+      font-weight: 700;
+    }
+
+    .match {
+      margin-top: 10px;
+      font-size: 12px;
+      padding-right: 10px;
+      /* border-right: 2px solid lightgray; */
+      align-content: center;
+    }
+
+    .mt10 {
+      margin-top: 10px;
+    }
+
+    .match-country {
+      font-weight: 700;
+      margin-right: 20px;
+    }
+
+    .featured-match-sub {
+      font-size: 10px;
+      color: #d0021b;
+      margin-top: 10px;
+    }
+
+    .featured-matches-score {
+      display: flex;
+      justify-content: space-evenly;
+
+    }
+
+    .featured-match-sub1 {
+      font-size: 12px;
+    }
+
+    .main-content {
+      display: inline-flex;
+      margin-top: 5px;
+    }
+
+    .latest-news {
+      background-color: white;
+      width: 194px;
+      padding-top: 15px;
+    }
+
+    .main-news {
+      background-color: white;
+      margin-left: 5px;
+      width: 392px;
+    }
+
+    .latest-news-content {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .latest-news-item {
+      font-size: 14px;
+    }
+
+    .latest-news-subitem {
+      font-size: 12px;
+      color: gray;
+      padding-bottom: 5px;
+    }
+
+    .heading {
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+
+    .main-news-tag {
+      font-size: 12px;
+      color: #666;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .main-news-picture a img {
+      padding: 5px;
+    }
+    .main-news-picture{
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+    }
+
+    img {
+      border-radius: 20px;
+    }
+
+    .main-news-title {
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .main-news-content {
+      font-size: 14px;
+    }
+
+    .main-news-links {
+      font-size: 14px;
+      font-weight: 500;
+      color: blue;
+    }
+
+    .main-news {
+      padding-top: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .feaured-videos{
+      margin-left: 5px;
+      width: 325px;
+      background-color: white;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .heading featured-match-heading{
+      padding-bottom: 15px;
+    }
+
+    .gray-navitem{
+      margin: 14px;
+    }
+    
+    .gray-navitem-head{
+      background-color: #000000;
+    }
+
+    .vl {
+      border-left: 2px solid gray;
+      height: 75px;
+    }
+    .more-content{
+      font-size: 14px;
+      color: blue;
+    }
+    .cricbuzz-plus{
+      background-color: black;
+      height: 48px;
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .icons{
+      padding-left: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="container">
+    <header>
+      <nav class="nav">
+        <img class="logo" src="https://www.cricbuzz.com/images/cb_logo.svg" />
+        <span class="navitem">Live Score</span>
+        <span class="navitem">Schedule</span>
+        <span class="navitem">Archives</span>
+        <span class="navitem">News<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Series<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Teams<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Videos<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">Ranking<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <span class="navitem">More<span class="material-icons"> arrow_drop_down </span>
+        </span>
+        <div class="cricbuzz-plus"><span class="navitem">Cricbuzz Plus</span></div>
+        <div class="icons navitem">
+        <span class="material-icons-outlined">
+          search
+        </span>
+        </div>
+        <div class="icons navitem">
+          <span class="material-icons-outlined">
+            account_circle
+          </span>
+        </div>
+        
+
+        
+      </nav>
+      <!-- Dark MATCHES section here -->
+      <div class="gray-nav">
+        <div class="gray-navitem-head"><span class="gray-navitem">MATCHES</span></div>
+        <span class="gray-navitem">HBHW vs ADS</span>
+        <span class="gray-navitem">BRHW vs SYSW - Live</span>
+        <span class="gray-navitem">AK vs AUS - AUS Won</span>
+        <span class="gray-navitem">ENG vs NZ - NZ Won</span>
+        <span class="gray-navitem">QL vs WA - WA Won</span>
+      </div>
+    </header>
+
+    <!-- Featured Matches -->
+    <div class="featured-matches">
+      <div class="featured-match-heading">FEATURED MATCHES</div>
+      <div class="featured-matches-score">
+        <!-- MATCH -->
+        <div class="match">
+          <div><span class="match-country">ADSW</span><span>142-4 (20)</span></div>
+          <div class="mt10"><span class="match-country">HBSW</span><span>3-0 (1.2)</span></div>
+          <div class="featured-match-sub">Hobart Hurricanes Women need 140 runs....</div>
+        </div>
+        <div class="vl"></div>
+        <div class="match">
+          <div><span class="match-country">ADSW</span><span>142-4 (20)</span></div>
+          <div class="mt10"><span class="match-country">HBSW</span><span>3-0 (1.2)</span></div>
+          <div class="featured-match-sub">Saturday, 13 Nov, 01:35 PM</div>
+        </div>
+        <div class="vl"></div>
+        <div class="match">
+          <div><span class="match-country">ADSW</span><span>142-4 (20)</span></div>
+          <div class="mt10"><span class="match-country">HBSW</span><span>3-0 (1.2)</span></div>
+          <div class="featured-match-sub">Australia won by 5 wkts</div>
+        </div>
+        <div class="vl"></div>
+        <div class="match">
+          <div><span class="match-country">ADSW</span><span>142-4 (20)</span></div>
+          <div class="mt10"><span class="match-country">HBSW</span><span>3-0 (1.2)</span></div>
+          <div class="featured-match-sub">New Zealand won by 5 wkts</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- to do -->
+    <div class="S-Container-p">
+
+      <div class="S-Container">
+        <span class="featured-match-heading">T20 World Cup</span>
+        <span class="S-navitem more-content">Home</span>
+        <span class="S-navitem more-content">Schedule</span>
+        <span class="S-navitem more-content">Points Table</span>
+        <span class="S-navitem more-content">News</span>
+        <span class="S-navitem more-content">Videos</span>
+        <span class="S-navitem more-content">Squads</span>
+        <span class="S-navitem more-content">Wicket Zone</span>
+        <span class="S-navitem more-content">Boundary Tracker</span>
+
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="latest-news">
+        <div class="heading featured-match-heading">Latest News</div>
+        <div class="latest-news-content">
+          <div class="latest-news-item">Bangladesh to play two Tests in New Zealand in January 2022</div>
+          <div class="latest-news-subitem">15h ago</div>
+          <hr>
+          <div class="latest-news-item">Bangladesh to only play ODIs in Ireland</div>
+          <div class="latest-news-subitem">21h ago</div>
+          <hr>
+          <div class="latest-news-item">Rohit, Pant, Bumrah and Shami rested for New Zealand Tests</div>
+          <div class="latest-news-subitem">1d ago</div>
+          <hr>
+          <div class="latest-news-item">World Cup finalists to meet in three-game T20I series in March</div>
+          <div class="latest-news-subitem">1d ago</div>
+          <hr>
+          <div class="latest-news-item">Stoinis' power-hitting against Rauf the game-changer, says Wade</div>
+          <div class="latest-news-subitem">1d ago</div>
+          <hr>
+          <div class="latest-news-item">Conway ruled out of World Cup final, India T20Is</div>
+          <div class="latest-news-subitem">1d ago</div>
+          <hr>
+          <div class="latest-news-item">BCB not ready to disrupt domestic calendar for national cricketers</div>
+          <div class="latest-news-subitem">1d ago</div>
+          <hr>
+          <div class="latest-news-item">Vikram Rathour, Paras Mhambrey, T Dilip set to be India support staff</div>
+          <div class="latest-news-subitem">1d ago</div>
+          <hr>
+          <div class="latest-news-item">Rohit, Pant, Bumrah and Shami set to be rested for NZ Tests</div>
+          <div class="latest-news-subitem">1d ago</div>
+          <hr>
+          <div class="latest-news-item">To be on the wrong side of a close game is not easy to take: Morgan </div>
+          <div class="latest-news-subitem">2d ago</div>
+          <hr>
+
+          <div class="more-content">more</div>
+
+        </div>
+      </div>
+
+
+
+      <div class="main-news">
+        <!-- ITEM 1 -->
+        <div class="main-news-tag">T20 WORLD CUP 2021</div>
+        <div class="main-news-picture">
+          <img src="https://via.placeholder.com/378x235.png" alt="">
+        </div>
+        <div class="main-news-title">
+          Matthew Wade, the anti-hero's hero
+        </div>
+        <div class="main-news-content">
+          The semifinal against Pakistan was his much-deserved moment in the sun, after having spent some 12 months
+          doing everything that was asked of him
+        </div>
+        <div class="main-news-links">
+          <div>Warner, Wade, Stoinis take Australia to first T20 WC final since 2010</div>
+          <div>End of World Cup, start of new road for Pakistan</div>
+          <div>Stoinis' power-hitting against Rauf the gamechanger - Wade</div>
+        </div>
+        <hr>
+
+        <!-- ITEM 2 -->
+        <div class="main-news-tag">T20 WORLD CUP 2021</div>
+        <div class="main-news-picture">
+          <img src="https://via.placeholder.com/378x235.png" alt="">
+        </div>
+        <div class="main-news-title">
+          How New Zealand beat the heat in the UAE
+        </div>
+        <div class="main-news-content">
+          Each player consumes at least 10 litres of water on match days, but that's only a small part of what goes on
+          behind the scenes
+        </div>
+        <div class="main-news-links">
+          <div>Calculated New Zealand win the long game</div>
+          <div>Conway ruled out of World Cup final, India T20Is</div>
+        </div>
+        <hr>
+
+        <!-- ITEM 3 -->
+        <div class="main-news-tag">THINK TANK</div>
+        <div class="main-news-picture">
+          <img src="https://via.placeholder.com/378x235.png" alt="">
+        </div>
+        <div class="main-news-title">
+          Will the waves rise again in the Caribbean Sea?
+        </div>
+        <div class="main-news-content">
+          To understand what has been going wrong for West Indies in T20 cricket, it's important to understand what they
+          did right previously. And it wasn't all about power-hitting
+        </div>
+        <hr>
+
+
+
+      </div>
+
+
+      
+      <div class="feaured-videos">
+        <div class="heading featured-match-heading">Featured Video</div>
+
+        <div class="main-news-picture">
+          <img src="https://via.placeholder.com/325x235.png" alt="">
+        </div>
+        <div class="latest-news-content">
+          <div class="latest-news-item">Bangladesh to play two Tests in New Zealand in January 2022</div>
+          <div class="latest-news-subitem">15h ago</div>
+        </div>
+        <hr>
+
+
+        <div class="main-news-picture">
+          <img src="https://via.placeholder.com/325x235.png" alt="">
+        </div>
+        <div class="latest-news-content">
+          <div class="latest-news-item">Bangladesh to play two Tests in New Zealand in January 2022</div>
+          <div class="latest-news-subitem">15h ago</div>
+        </div>
+        <hr>
+
+
+        <div class="main-news-picture">
+          <img src="https://via.placeholder.com/325x235.png" alt="">
+        </div>
+        <div class="latest-news-content">
+          <div class="latest-news-item">Bangladesh to play two Tests in New Zealand in January 2022</div>
+          <div class="latest-news-subitem">15h ago</div>
+        </div>
+        <hr>
+        
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
